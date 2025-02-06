@@ -1,6 +1,6 @@
-package main.projects.rockpaperscissors
+package org.example.main.projects.rockpaperscissors
 
-fun main() {
+fun rockPaperScissors() {
     println("Welcome to Rock, Paper, Scissors!")
     for (rounds in 1..3) {
         println("Round $rounds:")

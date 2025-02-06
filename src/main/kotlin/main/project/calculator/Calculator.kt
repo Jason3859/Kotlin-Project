@@ -1,4 +1,4 @@
-package main.projects.calculator
+package org.example.main.project.calculator
 
 fun add(a: Int, b: Int) = a + b
 fun sub(a: Int, b: Int) = a - b
@@ -7,7 +7,7 @@ fun divide(a: Double, b: Double) =  if (b != 0.0) a / b else throw ArithmeticExc
 fun square(a: Int) = a * a
 fun cube(a: Int) = a * a * a
 
-fun main() {
+fun calculator() {
     println("Choose an operation: add, sub, multiply, divide, square, cube")
     val operation = readlnOrNull()?.lowercase()
 
