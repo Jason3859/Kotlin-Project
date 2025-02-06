@@ -1,0 +1,5 @@
+[versions]
+convention-resolver = "0.8.0"
+
+[plugins]
+gradle-toolchains-convention-resolver = { id = "org.gradle.toolchains.foojay-resolver-convention", version.ref = "convention-resolver" }
