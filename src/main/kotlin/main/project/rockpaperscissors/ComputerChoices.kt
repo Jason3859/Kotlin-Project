@@ -1,4 +1,4 @@
-package main.projects.rockpaperscissors
+package main.project.rockpaperscissors
 
 fun computerChoice(): String {
     val choices = listOf("Rock", "Paper", "Scissors")

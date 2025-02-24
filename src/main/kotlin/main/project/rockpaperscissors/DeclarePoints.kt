@@ -1,4 +1,4 @@
-package main.projects.rockpaperscissors
+package main.project.rockpaperscissors
 
 var playerPoints = 0
 var computerPoints = 0

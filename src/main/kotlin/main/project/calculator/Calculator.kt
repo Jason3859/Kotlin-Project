@@ -3,7 +3,7 @@ package org.example.main.project.calculator
 fun add(a: Int, b: Int) = a + b
 fun sub(a: Int, b: Int) = a - b
 fun multiply(a: Int, b: Int) = a * b
-fun divide(a: Double, b: Double) =  if (b != 0.0) a / b else throw ArithmeticException("Can't divide by zero!")
+fun divide(a: Double, b: Double) =  if (b != 0.0) a / b else "Can't divide by zero"
 fun square(a: Int) = a * a
 fun cube(a: Int) = a * a * a
 

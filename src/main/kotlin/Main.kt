@@ -2,7 +2,7 @@ package org.example
 
 import java.util.Scanner
 import org.example.main.project.calculator.calculator
-import org.example.main.projects.rockpaperscissors.rockPaperScissors
+import org.example.main.project.rockpaperscissors.rockPaperScissors
 
 fun main() {
     val scanner = Scanner(System.`in`)

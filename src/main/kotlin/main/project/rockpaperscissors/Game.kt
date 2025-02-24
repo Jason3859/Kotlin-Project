@@ -1,4 +1,4 @@
-package main.projects.rockpaperscissors
+package main.project.rockpaperscissors
 
 fun game() {
     println("Rock, Paper, Scissors? (Type your choice)")

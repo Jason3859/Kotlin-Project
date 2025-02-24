@@ -1,4 +1,4 @@
-package org.example.main.projects.rockpaperscissors
+package org.example.main.project.rockpaperscissors
 
 fun rockPaperScissors() {
     println("Welcome to Rock, Paper, Scissors!")
