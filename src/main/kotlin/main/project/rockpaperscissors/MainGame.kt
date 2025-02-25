@@ -1,20 +1,29 @@
 package org.example.main.project.rockpaperscissors
 
+import main.project.rockpaperscissors.computerPoints
+import main.project.rockpaperscissors.game
+import main.project.rockpaperscissors.playerPoints
+
 fun rockPaperScissors() {
+    var rounds = 0
+
     println("Welcome to Rock, Paper, Scissors!")
-    for (rounds in 1..3) {
+
+    while (playerPoints <= 3 || computerPoints <= 3) {
+        rounds++
         println("Round $rounds:")
         game()
         println()
     }
+
     println("Game Over!")
     println("Final Score -> You: $playerPoints, Computer: $computerPoints")
 
-    if (playerPoints > computerPoints) {
-        println("Congratulations, you won the game!")
-    } else if (playerPoints < computerPoints) {
-        println("I won the game! Better luck next time.")
-    } else {
-        println("It's a tie!")
-    }
+    println(
+        when {
+            playerPoints > computerPoints -> "Congratulations, You won the game!"
+            playerPoints < computerPoints -> "Better luck next time. I won"
+            else -> "Tie"
+        }
+    )
 }
