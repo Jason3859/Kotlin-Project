@@ -24,5 +24,10 @@ kotlin {
 }
 
 application {
-    mainClass = "org.example.MainKt"
+    mainClass.set("org.example.MainKt")
+}
+
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
+    logging.captureStandardOutput(org.gradle.api.logging.LogLevel.QUIET)
 }

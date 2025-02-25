@@ -7,7 +7,7 @@ import org.example.main.project.rockpaperscissors.rockPaperScissors
 fun main() {
     val scanner = Scanner(System.`in`)
 
-    println("Enter 1 for Rock Paper Scissors and 2 for calculator")
+    print("Enter 1 for Rock Paper Scissors and 2 for calculator: ")
     val number = scanner.nextInt()
 
     when (number) {

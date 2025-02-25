@@ -8,10 +8,10 @@ fun square(a: Int) = a * a
 fun cube(a: Int) = a * a * a
 
 fun calculator() {
-    println("Choose an operation: add, sub, multiply, divide, square, cube")
+    print("Choose an operation (add, sub, multiply, divide, square, cube): ")
     val operation = readlnOrNull()?.lowercase()
 
-    if (operation in listOf("add", "sub", "multiply", "square", "cube")) {
+    if (operation in listOf("add", "sub", "multiply")) {
         print("Enter the first number: ")
         val num1 = readln().toInt()
 
@@ -27,8 +27,6 @@ fun calculator() {
                     else -> 0
                 }
             }
-            "square" -> square(num1)
-            "cube" -> cube(num1)
             else -> 0
         }
 
@@ -41,6 +39,17 @@ fun calculator() {
         val int2 = readln().toDouble()
 
         println("Answer: ${divide(int1, int2)}")
+    } else if (operation in listOf("square", "cube")) {
+        print("Enter the number: ")
+        val num1 = readln().toInt()
+
+        val result = when (operation) {
+            "square" -> square(num1)
+            "cube" -> cube(num1)
+            else -> "Error"
+        }
+
+        println("Answer: $result")
     } else {
         println("Invalid operation selected!")
     }
