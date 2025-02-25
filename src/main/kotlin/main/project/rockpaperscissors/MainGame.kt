@@ -9,11 +9,19 @@ fun rockPaperScissors() {
 
     println("Welcome to Rock, Paper, Scissors!")
 
-    while (playerPoints <= 3 || computerPoints <= 3) {
+    while (playerPoints < 3 || computerPoints < 3) {
         rounds++
         println("Round $rounds:")
         game()
         println()
+
+        if (playerPoints == 3) {
+            break
+        }
+
+        if (computerPoints == 3) {
+            break
+        }
     }
 
     println("Game Over!")

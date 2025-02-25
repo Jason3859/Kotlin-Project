@@ -11,7 +11,7 @@ fun main() {
     val number = scanner.nextInt()
 
     when (number) {
-        1 -> calculator()
-        2 -> rockPaperScissors()
+        1 -> rockPaperScissors()
+        2 -> calculator()
     }
 }
